@@ -22,7 +22,7 @@ namespace WismaTamu.Model
         [Required]
         public int KamarDipesanId { get; set; }
 
-        [ForeignKey("Kamar")]
+        [ForeignKey("KamarDipesanId")]
         public PesananKamar KamarDipesan { get; set; }
 
         [Required]

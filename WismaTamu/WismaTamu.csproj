@@ -77,6 +77,8 @@
     <Content Include="Images\kertas.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\luv.png" />
+    <Content Include="KelolaDataTransaksi.aspx" />
+    <Content Include="KonfirmasiPembayaran.aspx" />
     <Content Include="ManageMember.aspx" />
     <Content Include="PesanKamarAnggota.aspx" />
     <Content Include="Style\build.css" />
@@ -85,6 +87,7 @@
     <Content Include="Style\style-admin.css" />
     <Content Include="Style\style-user.css" />
     <Content Include="Style\style.css" />
+    <Content Include="View\KelolaDataKamar.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -99,6 +102,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="KelolaDataTransaksi.aspx.cs">
+      <DependentUpon>KelolaDataTransaksi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KelolaDataTransaksi.aspx.designer.cs">
+      <DependentUpon>KelolaDataTransaksi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KonfirmasiPembayaran.aspx.cs">
+      <DependentUpon>KonfirmasiPembayaran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KonfirmasiPembayaran.aspx.designer.cs">
+      <DependentUpon>KonfirmasiPembayaran.aspx</DependentUpon>
     </Compile>
     <Compile Include="ManageMember.aspx.cs">
       <DependentUpon>ManageMember.aspx</DependentUpon>
@@ -115,6 +132,8 @@
     <Compile Include="Model\Petugas.cs" />
     <Compile Include="Model\WismaTamuContext.cs" />
     <Compile Include="Model\WismaTamuDb.cs" />
+    <Compile Include="Pengendali\PengendaliAnggota.cs" />
+    <Compile Include="Pengendali\PengendaliKamar.cs" />
     <Compile Include="Pengendali\PengendaliPetugas.cs" />
     <Compile Include="Pengendali\PengendaliSesi.cs" />
     <Compile Include="PesanKamarAnggota.aspx.cs">
@@ -133,6 +152,13 @@
       <DependentUpon>User.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\KelolaDataKamar.aspx.cs">
+      <DependentUpon>KelolaDataKamar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\KelolaDataKamar.aspx.designer.cs">
+      <DependentUpon>KelolaDataKamar.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="User.Master" />
